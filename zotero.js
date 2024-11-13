@@ -3,7 +3,7 @@
 "use strict";
 
 var ZOTERO_CONFIG = {
-   "zotId": "2211939", // ID of group or user library to search in Zotero, e.g., 2211939, 2055673
+   "zotId": "4618153", // ID of group or user library to search in Zotero, e.g., 2211939, 2055673
    "zotIdType": "group", // group or user
    "collectionKey": "KHTHLKB5", // Key of collection within library to search, e.g., "KHTHLKB5", or "" if no collection
    "filterTags": "", // For filtering results by tag(s), e.g., "&tag=LTER-Funded".  See examples at https://www.zotero.org/support/dev/web_api/v3/basics
