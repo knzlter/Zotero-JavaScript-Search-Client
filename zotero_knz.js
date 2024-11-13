@@ -9,10 +9,10 @@ var ZOTERO_CONFIG = {
    "filterTags": "AA95K7QM", // For filtering results by tag(s), e.g., "&tag=LTER-Funded".  See examples at https://www.zotero.org/support/dev/web_api/v3/basics
    "resultsElementId": "searchResults", // Element to contain results
    "includeCols": ["Year", "Type", "ShowTags"], // Array of columns to include in the output table, other than Citation. The full set is ["Year", "Type", "ShowTags"]
-   "showTags": ["Foundational", "LTER-Funded", "LTER-Enabled"], // Include a column showing this tag if present for each item
+   "showTags": ["Foundational", "LTER-Funded", "KNZ-Assisted"], // Include a column showing this tag if present for each item
    "showTagColName": "Relationship", // Name for the column in HTML table under which the showTags will appear
    "style": "", // Bibliography display style, e.g., apa. Leave blank for default which is chicago-note-bibliography.
-   "limit": 25, // Max number of results to retrieve per page
+   "limit": 50, // Max number of results to retrieve per page
    "urlElementId": "searchUrl", // Element to display search URL
    "countElementId": "resultCount", // Element showing number of results
    "pagesTopElementId": "paginationTop", // Element to display result page links above results
