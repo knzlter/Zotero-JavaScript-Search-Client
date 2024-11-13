@@ -12,12 +12,12 @@ var ZOTERO_CONFIG = {
    "showTags": ["Foundational", "LTER-Funded", "LTER-Enabled"], // Include a column showing this tag if present for each item
    "showTagColName": "Relationship", // Name for the column in HTML table under which the showTags will appear
    "style": "", // Bibliography display style, e.g., apa. Leave blank for default which is chicago-note-bibliography.
-   "limit": 10, // Max number of results to retrieve per page
+   "limit": 25, // Max number of results to retrieve per page
    "urlElementId": "searchUrl", // Element to display search URL
    "countElementId": "resultCount", // Element showing number of results
    "pagesTopElementId": "paginationTop", // Element to display result page links above results
    "pagesBotElementId": "paginationBot", // Element to display result page links below results
-   "showPages": 5, // MUST BE ODD NUMBER! Max number of page links to show
+   "showPages": 11, // MUST BE ODD NUMBER! Max number of page links to show
    "sortDiv": "sortDiv" // Element with interactive sort options
 };
 
