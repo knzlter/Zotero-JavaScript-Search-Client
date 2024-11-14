@@ -9,8 +9,8 @@ user or group library
 
 Live demos:
 
-* [Basic example](https://ble-lter.github.io/Zotero-JavaScript-Search-Client/minimal.html)
-* [Complete example](https://ble-lter.github.io/Zotero-JavaScript-Search-Client/complete.html)
+* [Basic example](https://knzlter.github.io/Zotero-JavaScript-Search-Client/minimal.html)
+* [Complete example](https://knzlter.github.io/Zotero-JavaScript-Search-Client/complete.html)
 
 ## Motivation
 
@@ -42,7 +42,7 @@ closing `</body>` tag in your HTML, add a script tag like this one:
 
 ```html
 <script>
-   ZOTERO_CONFIG["zotId"] = "2055673";
+   ZOTERO_CONFIG["zotId"] = "4618153";
    ZOTERO_CONFIG["collectionKey"] = "";
    ZOTERO_CONFIG["filterTags"] = "&tag=LTER-BLE";
 </script>
