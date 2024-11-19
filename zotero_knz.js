@@ -232,7 +232,6 @@ function parseZoteroResults(resultText) {
          row += "<td>" + year + "</td>"
       }
       
-      row += "<td>" + "DEBUGGGGGG" + "</td>";
       row += "<td>" + result["bib"] + itemLink + " " + dataLinks + "</td>";
       if (showType) {
          row += "<td>" + itemType + "</td>";
