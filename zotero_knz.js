@@ -229,10 +229,10 @@ function parseZoteroResults(resultText) {
       var dataLinks = parseDataLinks(result["data"]["extra"]);
       var row = "<tr>";
       if (showYear) {
-         //row += "<td>" + year + "</td>";
-         row += "<td>" + "DEBUG" + "</td>";
-         // row += "<td>" + "DEBUGGGGGG" + result["bib"] + "</td>";
+         row += "<td>" + year + "</td>"
       }
+      
+      row += "<td>" + "DEBUGGGGGG" + "</td>";
       row += "<td>" + result["bib"] + itemLink + " " + dataLinks + "</td>";
       if (showType) {
          row += "<td>" + itemType + "</td>";
