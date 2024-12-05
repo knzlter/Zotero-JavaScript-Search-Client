@@ -227,15 +227,23 @@ function parseZoteroResults(resultText) {
       var tagsToShow = parseShowTags(result["data"]["tags"]);
       var itemLink = parseItemLink(result["data"]["url"]);
       var dataLinks = parseDataLinks(result["data"]["extra"]);
+      var paperCreator = result["data"]["creators"]
       var paperTitle = result["data"]["title"]
-      var papaerUrl = result["data"]["url"]
+      var paperUrl = result["data"]["url"]
 
       var row = "<tr>";
       if (showYear) {
          row += "<td>" + year + "</td>"
       }
 
-      row += "<td>" + result["bib"] + "<br>" + "<a href='" + papaerUrl + "'>" + paperTitle + "</a>" + "</td>";
+      var bib = result["bib"];
+      var titleStartIdx = bib.indexOf("x201C") + 6;
+      var titleEndIdx = bib.indexOf("&#x201D");
+      var title = bib.substring(titleStartIdx, titleEndIdx)
+      title = "<a href='" + paperUrl + "'>" + title + "</a>";
+      bib = bib.substring(0, titleStartIdx) + title + bib.substring(titleEndIdx, bib.length);
+      
+      row += "<td>" + bib + itemLink + " " + dataLinks + "</td>";
 
       if (showType) {
          row += "<td>" + itemType + "</td>";
